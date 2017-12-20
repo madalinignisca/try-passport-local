@@ -7,12 +7,13 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     if (error && error.length > 0)
-      div.alert.alert-danger(role='alert')
-        span.glyphicon.glyphicon-exclamation-sign(aria-hidden="true")
-        span.sr-only Error:
-        .
-          &nbsp;
-          #{error}
+      .container
+        div.alert.alert-danger(role='alert')
+          span.glyphicon.glyphicon-exclamation-sign(aria-hidden="true")
+          span.sr-only Error:
+          .
+            &nbsp;
+            #{error}
     
     block content
   
